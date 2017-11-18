@@ -16,7 +16,7 @@ while i <= iter:
     pz1 =  0.3 * np.exp(-(sample1 - 0.3) ** 2) + 0.7 * np.exp(-(sample1 -2) ** 2 / 0.3)
     if pz1 >= u1:
         beta1 = sample1
-    else: 
+    elif i == 1: 
         beta1 = 0
     '''
     Codes to sample beta2, beta3, beta4 go here, similar to sample beta1. 
